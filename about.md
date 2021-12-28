@@ -25,3 +25,66 @@ titles:
   # @end locale config
 key: page-about
 ---
+
+<!-- # About me -->
+
+<img src="https://raw.githubusercontent.com/LoteeYoon/LoteeYoon.github.io/master/totoro.jpg" alt="Avatar" width="150" height="150">
+
+    C:\Muah> hi there, my name is Jaeung Yoon_
+
+## Education
+
+  - **Gyeongsang National University, Jinju, Gyeongnam, South Korea (Mar 2014 - Aug 2019)**
+
+    B.S. in Chemical Engineering
+
+  - **Inha University, Incheon, South Korea (Mar 2020 - )**
+
+    M.S. in Computer Engineering
+
+
+## Interest Fields
+
+  - **Reinforcement Learning**
+  - **Robotics**
+
+
+## Skills  
+
+  - **C / C++ / Python**
+  - **Tensorflow / Pytorch**
+
+## Course Took  
+
+  - **Mathematics**
+
+    Calculus / Linear Algebra / Statistics    
+
+  - **Chemical Engineering**
+
+    Thermodynamics / Fluid Dynamics / Heat & Mass Transfer   
+    Chemical Process / Process Control / Reaction Engineering / Separation Process  
+
+  - **Electronics**
+
+    Signals and Systems / Digital Logic Circuit   
+
+
+  - **Computer Engineering**
+
+    OOP / Data Structure / Algorithms / Database   
+    Unix Programming / Data Mining / Operating System   
+
+
+  - **Machine Learning**
+
+    Machine Learning(Andrew ng) / Stanford CS231n / Data Intelligence   
+    Deep Neural Network / Reinforcement Learning / Probabilistic inference   
+    df
+## Projects
+<br/>
+
+## Contact  
+
+- email : whgdmswovbd@gmail.com
+- social : [GItHub](https://github.com/LoteeYoon), [Facebook](https://www.facebook.com/whgdmswodnd), [Twitter](https://www.twitter.com/LoteeYoon)
