@@ -52,7 +52,7 @@ header:
 docs-en:
   - title: Study Note
     children:
-      - title: Machine_Learning
+      - title: Maching Learning
         url: /archive.html?tag=Machine_Learning
       - title: Math
         url: /archive.html?tag=Math
