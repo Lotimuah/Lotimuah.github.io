@@ -52,14 +52,14 @@ header:
 docs-en:
   - title: Study Note
     children:
-      - title: Maching Learning
-        url: /archive.html?tag=Machine-Learning
+      - title: Maching_Learning
+        url: /archive.html?tag=Machine_Learning
       - title: Math
         url: /archive.html?tag=Math
   - title: Paper
     children:
-      - title: Paper+Review
-        url: /archive.html?tag=Paper+Review
+      - title: Paper_Review
+        url: /archive.html?tag=Paper_Review
   - title: Competition
     children:
       - title: Dacon
