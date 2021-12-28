@@ -1,7 +1,7 @@
 ---
 layout: article
 title: Docker command
-tags: BOJ
+tags: etc
 #comments: true
 #article_header:
 #  type: cover
