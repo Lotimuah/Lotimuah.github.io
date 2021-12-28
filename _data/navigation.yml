@@ -52,8 +52,8 @@ header:
 docs-en:
   - title: Study Note
     children:
-      - title: Machine Learning
-        url: /archive.html?tag=Machine Learning
+      - title: Machine_Learning
+        url: /archive.html?tag=Machine_Learning
       - title: Math
         url: /archive.html?tag=Math
   - title: Paper
