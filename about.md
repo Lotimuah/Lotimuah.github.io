@@ -80,7 +80,7 @@ key: page-about
 
     Machine Learning(Andrew ng) / Stanford CS231n / Data Intelligence   
     Deep Neural Network / Reinforcement Learning / Probabilistic inference   
-    df
+
 ## Projects
 <br/>
 
