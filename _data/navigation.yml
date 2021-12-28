@@ -53,7 +53,7 @@ docs-en:
   - title: Study Note
     children:
       - title: Maching Learning
-        url: /archive.html?tag=Machine_Learning
+        url: /archive.html?tag=Machine-Learning
       - title: Math
         url: /archive.html?tag=Math
   - title: Paper
