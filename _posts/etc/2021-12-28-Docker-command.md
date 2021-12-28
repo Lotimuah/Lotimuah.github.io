@@ -14,6 +14,10 @@ key: page-aside
 
   \* Customize할 부분은 []로 표현했습니다.
 
+### 0. Image search
+
+    $ docker search [image_name]
+
 ### 1. Image pull
 
     $ docker pull [image_name]
@@ -37,47 +41,57 @@ key: page-aside
     -p [host_port2]:[container_port2] \
     [image_name]
 
-### 11. Container access (CLI)
+### 4. Container access (CLI)
 
     $ docker exec -it [container_name] /bin/bash    // container의 /bin/bash를 shell로 하여 표준입출력(-it)으로 접속
 
-### 13. Container root setting
+### 5. Container root setting
 
     $ docker exec -u 0 -it [container_name] bash    // -root(UID=0)로 container접속
     $ root@container_name:/# passwd
       Enter new UNIX password:
       Retype new UNIX password:
 
-### 8. Container stop
+### 6. Container stop
 
     $ docker stop [container_name]
 
-### 4. Container start
+### 7. Container start
 
     $ docker run [container_name]
 
-### 9. Container restart
+### 8. Container restart
 
     $ docker restart [container_name]
 
-### 10. Container rename
+### 9. Container rename
 
     $ docker rename [current_name] [new_name]
 
-### 5. Print container list
+### 10. Print container list
 
     $ docker ps                      // list only running containers
     $ docker ps -a                   // list all stopped and running containers
 
-### 12. Print container information
+### 11. Print container information
 
     $ docker inspect [container_name]
 
-### 6. Remove container
+### 12. Remove container
 
     $ docker rm [container_name]
     $ docker rm [container_ID]
 
-### 7. Remove image
+### 13. Remove image
 
     $ docker rmi [image_name]
+
+### 14. Image commit
+
+    $ docker commit [container_name] [new_image_name]
+
+### 15. Image push
+
+    $ docker login
+    $ docker tag [new_image_name] [docker_ID]/[new_image_name:TAG]
+    $ docker push [docker_id]/[new_image_name:TAG]
