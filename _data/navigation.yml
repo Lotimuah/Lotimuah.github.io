@@ -48,3 +48,23 @@ header:
       fr-LU   : *FR
       # @end locale config
     url: /about.html
+
+docs-en:
+  - title: 논문
+    children:
+      - title: 논문정리
+        url: /archive.html?tag=논문정리
+      - title: 논문구현
+        url: /archive.html?tag=논문구현
+  - title: Coding test
+    children:
+      - title: BOJ
+        url: /archive.html?tag=BOJ
+      - title: LeetCode
+        url: /archive.html?tag=LeetCode
+      - title: Programmers
+        url: /archive.html?tag=Programmers
+  - title: etc
+    children:
+      - title: etc
+        url: /archive.html?tag=etc
