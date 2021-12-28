@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Docker command
+title: Docker basic command
 tags: etc
 #comments: true
 #article_header:

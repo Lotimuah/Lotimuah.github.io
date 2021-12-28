@@ -50,12 +50,22 @@ header:
     url: /about.html
 
 docs-en:
-  - title: 논문
+  - title: Study Note
     children:
-      - title: 논문정리
-        url: /archive.html?tag=논문정리
-      - title: 논문구현
-        url: /archive.html?tag=논문구현
+      - title: Machine Learning
+        url: /archive.html?tag=Machine Learning
+      - title: Math
+        url: /archive.html?tag=Math
+  - title: Paper
+    children:
+      - title: Paper+Review
+        url: /archive.html?tag=Paper+Review
+  - title: Competition
+    children:
+      - title: Dacon
+        url: /archive.html?tag=Dacon
+      - title: Kaggle
+        url: /archive.html?tag=Kaggle
   - title: Coding test
     children:
       - title: BOJ
@@ -64,7 +74,9 @@ docs-en:
         url: /archive.html?tag=LeetCode
       - title: Programmers
         url: /archive.html?tag=Programmers
-  - title: etc
+  - title: Etc
     children:
+      - title: Diary
+        url: /archive.html?tag=Diary
       - title: etc
         url: /archive.html?tag=etc
