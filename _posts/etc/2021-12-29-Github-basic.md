@@ -12,6 +12,7 @@ aside:
 key: page-aside
 ---
 
+  \* Customize할 부분은 []로 표현했습니다.
 
 ### 0. Git install
 
@@ -21,19 +22,28 @@ key: page-aside
 
 ### 1. Git setup
 
-    $ git config --global user.name "your name"
-    $ git config --global user.email "your email"
+    $ git config --global user.name "[your name]"
+    $ git config --global user.email "[your email]"
 
     // user.name, user.email check
     $ git config --list
-    
+
     // if you want to delete this setup
     $ git config --unset user.name
     $ git config --unset user.email
 
-### 2. Git clone
+### 2. Create repository
 
-    $ cd ~/your path          // 원하는 dir로 이동
-    $ git clone [repository URL you want to clone]
+[github](https://github.com) 가입 후 repository 생성
 
-### 3.
+
+### 3. Git repository sync
+
+    // 기존 프로젝트가 없는 경우 clone
+    $ cd ~/[your path]                              // 원하는 dir로 이동
+    $ git clone [repository URL]
+
+    // 기존 프로젝트가 있는 경우 remote & push
+    $ cd ~/[your path]                              // 원하는 dir로 이동
+    $ git remote add [name] [repository URL]
+    $ git remote -v                                 // remote check
