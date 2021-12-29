@@ -17,7 +17,7 @@ key: page-aside
 
 ### 1. Network connection
 
-    <img src="https://raw.github.com/LoteeYoon/LoteeYoon.github.io/master/ubuntu_network.jpg>
+<img src="https://raw.github.com/LoteeYoon/LoteeYoon.github.io/master/ubuntu_network.jpg>
 
 ### 2. root permission set
 
