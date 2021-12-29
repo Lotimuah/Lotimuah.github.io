@@ -34,7 +34,7 @@ key: page-aside
 
 ### 2. Create repository
 
-[github](https://github.com) 가입 후 repository 생성
+&nbsp;&nbsp;&nbsp;[github](https://github.com) 가입 후 repository 생성
 
 
 ### 3. Git repository sync
@@ -43,11 +43,34 @@ key: page-aside
     $ cd ~/[your path]                              // 원하는 dir로 이동
     $ git clone [repository URL]
 
+
     // 기존 프로젝트가 있는 경우 remote & push
     $ cd ~/[your path]                              // 원하는 dir로 이동
     $ git init
-    $ git branch -M main
-    $ git remote add [name] [repository URL]        // name : 관례적으로 origin 사용
+    $ git branch -M main                            // branch rename (master -> main)
+    $ git remote add [name] [repository URL]        // name : remote repo name, 관례적으로 origin 사용
     $ git remote -v                                 // remote check
 
-### 4.  
+### 4. Git commit, push
+
+    $ git add .
+    $ git status                                    // staged check
+    $ git commit -m "[message]"
+    $ git push -u [name] main                       // main branch에 push
+                                                    // name : origin 사용
+                                                    // -u option으로 이후 git push만으로 push 가능
+### 5. Git Pull
+
+    $ git pull -u origin main
+    $ git pull
+
+### 6. Git history check
+
+    $ git log
+    $ git log --oneline --graph
+
+### 7. Git revert, reset
+
+
+
+    // revert : commit을 지우
