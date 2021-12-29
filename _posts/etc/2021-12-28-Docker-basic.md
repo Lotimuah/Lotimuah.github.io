@@ -16,14 +16,14 @@ key: page-aside
 
 ### 0. Docker Install
 
-    자동 설치 스크립트
+    // 자동 설치 스크립트
     $ curl -fsSL https://get.docker.com/ | sudo sh
 
-    패키지 직접 설치
+    // 패키지 직접 설치
     $ sudo apt-get update
     $ sudo apt-get install docker.io
     $ sudo ln -sf /usr/bin/docker.io /usr/local/bin/docker
-    
+
 ### 1. Image search
 
     $ docker search [image_name]
