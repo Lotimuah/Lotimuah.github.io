@@ -18,7 +18,7 @@ key: page-aside
 
     $ sudo apt-get install git        // for Ubuntu
 
-다른 OS의 경우 [Git Downloads](https://git-scm.com/downloads) 참고
+&nbsp;&nbsp;다른 OS의 경우 [Git Downloads](https://git-scm.com/downloads) 참고
 
 ### 1. Git setup
 
@@ -45,5 +45,9 @@ key: page-aside
 
     // 기존 프로젝트가 있는 경우 remote & push
     $ cd ~/[your path]                              // 원하는 dir로 이동
-    $ git remote add [name] [repository URL]
+    $ git init
+    $ git branch -M main
+    $ git remote add [name] [repository URL]        // name : 관례적으로 origin 사용
     $ git remote -v                                 // remote check
+
+### 4.  
