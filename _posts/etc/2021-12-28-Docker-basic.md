@@ -14,7 +14,7 @@ key: page-aside
 
   \* Customize할 부분은 []로 표현했습니다.
 
-### 0. Docker Install
+### 0. Docker install
 
     // 자동 설치 스크립트
     $ curl -fsSL https://get.docker.com/ | sudo sh
