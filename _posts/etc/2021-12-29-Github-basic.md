@@ -18,7 +18,7 @@ key: page-aside
 
     $ sudo apt-get install git        // for Ubuntu
 
-&nbsp;&nbsp;다른 OS의 경우 [Git Downloads](https://git-scm.com/downloads) 참고
+&nbsp;&nbsp;&nbsp;다른 OS의 경우 [Git Downloads](https://git-scm.com/downloads) 참고
 
 ### 1. Git setup
 

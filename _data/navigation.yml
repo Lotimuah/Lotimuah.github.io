@@ -60,6 +60,8 @@ docs-en:
     children:
       - title: Paper_Review
         url: /archive.html?tag=Paper_Review
+      - title: Implementation
+        url: /archive.html?tag=Implementation
   - title: Competition
     children:
       - title: Dacon
