@@ -19,4 +19,21 @@ key: page-aside
 
 다른 OS의 경우 [Git Downloads](https://git-scm.com/downloads) 참고
 
-### 1.
+### 1. Git setup
+
+    $ git config --global user.name "your name"
+    $ git config --global user.email "your email"
+
+    // user.name, user.email check
+    $ git config --list
+    
+    // if you want to delete this setup
+    $ git config --unset user.name
+    $ git config --unset user.email
+
+### 2. Git clone
+
+    $ cd ~/your path          // 원하는 dir로 이동
+    $ git clone [repository URL you want to clone]
+
+### 3.
