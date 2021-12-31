@@ -1,7 +1,7 @@
 ---
 layout: article
 title: Github basic
-tags: etc
+tags: Github
 #comments: true
 #article_header:
 #  type: cover
@@ -103,4 +103,3 @@ key: page-aside
     $ git checkout -b [branch_name]                 // generate new branch & checkout
     $ git checkout -t origin/[branch_name]          // get branch from remote repo & checkout
     $ git checkout -b [commit_hash]                 // generate new branch with [commit_hash] & checkout
-    

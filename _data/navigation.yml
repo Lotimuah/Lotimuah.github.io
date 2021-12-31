@@ -68,6 +68,18 @@ docs-en:
         url: /archive.html?tag=Dacon
       - title: Kaggle
         url: /archive.html?tag=Kaggle
+  - title: Programming
+    children:
+      - title: Python
+        url: archive.html?tag=Python
+      - title: Linux
+        url: archive.html?tag=Linux
+      - title: Docker
+        url: archive.html?tag=Docker
+      - title: Github
+        url: archive.html?tag=Github
+      - title: etc
+        url: archive.html?tag=etc
   - title: Coding test
     children:
       - title: BOJ
@@ -76,9 +88,3 @@ docs-en:
         url: /archive.html?tag=LeetCode
       - title: Programmers
         url: /archive.html?tag=Programmers
-  - title: Etc
-    children:
-      - title: Diary
-        url: /archive.html?tag=Diary
-      - title: etc
-        url: /archive.html?tag=etc

@@ -1,7 +1,7 @@
 ---
 layout: article
 title: Docker basic
-tags: etc
+tags: Docker
 #comments: true
 #article_header:
 #  type: cover
