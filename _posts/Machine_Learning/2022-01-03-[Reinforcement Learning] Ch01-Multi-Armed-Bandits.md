@@ -21,3 +21,5 @@ key: page-aside
 * Finite-Armed Bandits Model
 
   $A_t \in \{ 1, 2, ... , k \}$
+  $R_t \sim(iid) P_{A_t}$ -> Unknown dist.
+  $q_*(a) = E\[R_t|A_t = a]$  -> 각 action에 대한 $R_t$의 분포를 모르므로 true action-value를 알 수 없다.
