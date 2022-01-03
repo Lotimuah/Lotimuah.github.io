@@ -22,4 +22,4 @@ key: page-aside
 
   $A_t \in \{1, 2, ... , k\}$  
   $R_t \sim_{iid} P_{A_t}\qquad Unknown dist.$  
-  $q_*(a) = E\[R_t|A_t = a\]\qquad 각 action에 대한 R_t의 분포를 모르므로 true action-value를 알 수 없다.$  
+  $q_*(a) = E\[R_t|A_t = a\]\qquad 각 action에 대한 R_t의 분포를 모르므로 true action value를 알 수 없다.$  
