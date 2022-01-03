@@ -20,6 +20,4 @@ key: page-aside
 
 * Finite-Armed Bandits Model
 
-  $A_t \in \{ 1, 2, ... , k \}$
-  $R_t \sim(iid) P_{A_t}$
-  $q_*(a) = E\[R_t|A_t = a\]$
+  $A_t \in \{1, 2, ... , k\}\\R_t \sim(iid) P_{A_t}\\q_*(a) = E\[R_t|A_t = a\]$
