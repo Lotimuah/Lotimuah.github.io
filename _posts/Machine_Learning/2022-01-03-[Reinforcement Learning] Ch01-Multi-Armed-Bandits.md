@@ -1,6 +1,6 @@
 ---
 layout: article
-title: [Reinforcement Learning] Ch01. Multi Armed Bandits
+title: \[Reinforcement Learning\] Ch01. Multi Armed Bandits
 tags: Machine_Learning
 aside:
   toc: true
