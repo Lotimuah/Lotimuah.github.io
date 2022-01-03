@@ -1,6 +1,6 @@
 ---
 layout: article
-title: \[Reinforcement Learning\] Ch01. Multi Armed Bandits
+title: (RL) Ch01. Multi Armed Bandits
 tags: Machine_Learning
 aside:
   toc: true
@@ -20,4 +20,4 @@ key: page-aside
 
 * Finite-Armed Bandits Model
 
-  $A_t /in \{1, 2, ... , k\}$
+  $A_t \in \{ 1, 2, ... , k \}$
