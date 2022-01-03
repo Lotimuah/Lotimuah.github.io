@@ -20,6 +20,6 @@ key: page-aside
 
 ### Finite-Armed Bandits Model
 
-  $A_t \in \{1, 2, ... , k\}$  
+  $A_t \in \left\{ 1, 2, ... , k \right\}$  
   $R_t \sim_{iid} P_{A_t}$  
   $q_*(a) = E\[R_t|A_t = a\]$  
