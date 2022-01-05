@@ -21,6 +21,6 @@ use_math: true
 
 ## Problems
 
-  이전 포스팅에서([DQN](https://loteeyoon.github.io/2022/01/04/DQN-%EB%85%BC%EB%AC%B8-%EC%A0%95%EB%A6%AC.html)) RL에 Neural Network를 성공적으로 적용시킨
-  
+  이전 포스팅[[DQN 논문 정리](https://loteeyoon.github.io/2022/01/04/DQN-%EB%85%BC%EB%AC%B8-%EC%A0%95%EB%A6%AC.html)]에서 RL에 Neural Network를 성공적으로 적용시킨 DQN에 대해 알아보았습니다.
+
 ## Methods
