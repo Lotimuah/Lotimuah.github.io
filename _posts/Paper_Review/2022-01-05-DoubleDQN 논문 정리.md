@@ -42,14 +42,20 @@ $$
 
 <br/>
 
-  Q-learning에서는 next state $s'$의 expected value의 최대값 $max_{a'}(\mathbb{E}[ Q(s', a') ])$을 구하는 것이 목적입니다. next state에서의 action 중 어느 action의 기댓값이 가장 큰지 알고 싶은데 Q-learning는 이를 단지 $\max_{a'}(Q(s', a'))$으로 estimate합니다. 그러나 이때 Non-negative bias가 존재하게 되고 결국 다음과 같이 $\max_{a'}(Q(s', a'))$는 평균적으로 어떠한 $a'$의 action-value의 기댓값 보다도 높은 값을 가지게 됩니다.
+  Q-learning에서는 next state $s'$의 expected value의 최대값 $max_{a'}\mathbb{E}[ Q(s', a') ]$을 구하는 것이 목적입니다. next state에서의 action 중 어느 action의 기댓값이 가장 큰지 알고 싶은데 Q-learning에서는 이를 위해 단지 $\max_{a'}Q(s', a')$으로 estimate합니다. 그러나 이때 Non-negative bias가 존재하게 되고 $\max_{a'}Q(s', a')$는 평균적으로 어떠한 $a'$의 action-value의 기댓값 보다도 높은 값을 가지게 됩니다.
+
+$$
+\begin{aligned}
+\mathbb{E}[\max_{a'} Q(s', a')] \geq \max_{a'} \mathbb{E}[Q(s', a')]
+\end{aligned}
+$$
 
   논문에서는 위의 내용을 Theorem 1.을 통해 보여주고 있습니다.  
 
 
 <p align="center"><img src="https://github.com/LoteeYoon/LoteeYoon.github.io/blob/master/DoubleDQN_Theorem.png?raw=true"></p>
 
-  Theorem 1.을 간단하게 설명하면 max operation을 사용하게 되면 optimal value보다 항상 최소 $\sqrt{\frac{C}{m-1}}$만큼의 bias를 가진다는 것입니다. Q-learning은
+  Theorem 1.을 간단하게 설명하면 max operation을 사용하게 되면 optimal value보다 항상 최소 $\sqrt{\frac{C}{m-1}}$만큼의 bias를 가진다는 것입니다. 실험을 통해 
 
 <p align="center"><img src="https://github.com/LoteeYoon/LoteeYoon.github.io/blob/master/DoubleDQN_Figure_1.png?raw=true"></p>
 ## Methods
