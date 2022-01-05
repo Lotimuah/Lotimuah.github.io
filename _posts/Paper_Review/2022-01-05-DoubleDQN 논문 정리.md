@@ -57,7 +57,23 @@ $$
 
 <p align="center"><img src="https://github.com/LoteeYoon/LoteeYoon.github.io/blob/master/DoubleDQN_Theorem.png?raw=true"></p>
 
-  Theorem 1.을 간단하게 설명하면 max operation을 사용하게 되면 optimal value보다 항상 최소 $\sqrt{\frac{C}{m-1}}$만큼의 bias를 가진다는 것입니다. 실험을 통해
+  Theorem 1.을 간단하게 설명하면 max operation을 사용하게 되면 optimal value보다 항상 최소 $\sqrt{\frac{C}{m-1}}$만큼의 bias를 가진다는 것입니다. 논문에서는 이를 single estimator의 문제로 규정하고 이에 대한 대안으로 double estimator를 제안했습니다.
+
+
+## Methods
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <p align="center"><img src="https://github.com/LoteeYoon/LoteeYoon.github.io/blob/master/DoubleDQN_Figure_1.png?raw=true"></p>
-## Methods
