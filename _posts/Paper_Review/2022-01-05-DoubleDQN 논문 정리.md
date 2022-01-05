@@ -34,7 +34,7 @@ Y^{DQN}_{t} \equiv R_{t+1} + \gamma \max_a Q(s_{t+1}, a; \; \theta^-_t)\\
 \end{aligned}
 $$
 
-여기서 max operation로 인해 따라가야할 target
+여기서 max operation로 인해 function approximator가 따라가야할 target이 실제값보다 크게 추정됩니다. 이는 Neural network를 function approximator로 사용하지 않는 기본 Q-learning에서도 나타났던 문제입니다. 이렇게 overestimate하게 되는 이유를
 
 
 <p align="center"><img src="https://github.com/LoteeYoon/LoteeYoon.github.io/blob/master/DoubleDQN_Theorem.png?raw=true"></p>
