@@ -37,5 +37,5 @@ $$
 여기서 max operation로 인해 따라가야할 target
 
 
-<p align="center"><img src=""></p>
+<p align="center"><img src="https://github.com/LoteeYoon/LoteeYoon.github.io/blob/master/DoubleDQN_Theorem.png?raw=true"></p>
 ## Methods
