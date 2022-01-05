@@ -26,5 +26,16 @@ use_math: true
 
 ## Problems
 
+  DQN에서 우리는 Q-learning의 target을 다음과 같이 사용하였습니다.
 
+$$
+\begin{aligned}
+Y^{DQN}_{t} \equiv R_{t+1} + \gamma \max_a Q(s_{t+1}, a; \; \theta^-_t)\\
+\end{aligned}
+$$
+
+여기서 max operation로 인해 따라가야할 target
+
+
+<p align="center"><img src=""></p>
 ## Methods
