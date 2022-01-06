@@ -98,14 +98,50 @@ $$
 
 <br/>
 
-  논문에서는 이러한 prior information을 활용해 새로운 advantage 식을 제시했습니다.
+또 하나 알 수 있는 사실은 optimal action $a^*$일 때, 다음이 성립한다는 것입니다.
 
 <br/>
 
 $$
 \begin{aligned}
-Q(s, a; \theta, \alpha, \beta) = V(s; \theta, \beta) + \biggl( A(s, a; \theta, \alpha) - max_{a' \in |\mathcal{A}|}A(s, a'; \theta, \alpha) \biggr)
+Q(s, a^*) = max_aQ(s, a) = V(s)\\
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+\therefore A(s, a^*) = 0\\
 \end{aligned}
 $$
 
 <br/>
+
+  이는 deterministic policy에 대해 항상 max action-value를 선택한다면 expectation을 취해도 max value일 것이므로 그 값이 $V(s)$값과 동일하기 때문입니다. 결국 이러한 경우 advantage는 0이 됩니다.
+
+  논문에서는 이러한 prior information을 활용해 새로운 advantage 식을 제시합니다.
+
+<br/>
+
+$$
+\begin{aligned}
+Q(s, a; \theta, \alpha, \beta) = V(s; \theta, \beta) + \biggl( A(s, a; \theta, \alpha) - max_{a' \in |\mathcal{A}|}A(s, a'; \theta, \alpha) \biggr)\\
+\end{aligned}
+$$
+
+<br/>
+
+  위 식에서 우변의 두 번째 term을 보면 parameter $\alpha$에 의해 근사되는 $A(s, a)$는 완전히 $A(s, a)$의 정의를 따르진 않을 것이지만 $max_{a' \in |\mathcal{A}|}A(s, a'; \theta, \alpha)$라는 identifier를 통해 괄호안의 수식이 original advantage $A(s, a)$의 property를 따를 수 있게끔 해줍니다. 결국 optimal action일 경우 위의 prior information을 통해 괄호 term은 $A(s, a^*) - maxA_{a'}(s, a') = 0$이 될 것이고 state-value $V(s)$ 값을 구분할 수 있게 됩니다.
+
+  논문에서는 $\max$ 가 아닌 평균을 이용하는 방법도 제안했습니다.
+
+<br/>
+
+$$
+\begin{aligned}
+Q(s, a; \theta, \alpha, \beta) = V(s; \theta, \beta) + \biggl( A(s, a; \theta, \alpha) - \frac{1}{|\mathcal{A}|} \sum_{a'}A(s, a'; \theta, \alpha) \biggr)\\
+\end{aligned}
+$$
+
+<br/>
+
+  위에서 advantage $A^{\pi}$의 expectation은 0이라는 것을 이용하면 첫 번째 방법과 동일합니다. 다만, 평균을 빼줌으로써 실제적인 $V$ 와 $A$의 property와는 조금 멀어지게 되지만 action간의 ranking은 여전히 보존하므로 학습에 있어서 안정성을 준다고 논문에서는 서술하고 있습니다.
