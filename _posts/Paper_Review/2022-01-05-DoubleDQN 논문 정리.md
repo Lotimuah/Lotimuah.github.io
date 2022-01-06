@@ -62,7 +62,18 @@ $$
 
 ## Methods
 
-  target의 overestimate 문제를 해결하기 위해 논문에서는 **double estimator** 방식을 사용했는데, 이는 target을 계산하는 과정을 <U>next state의 action을 선택하는 과정</U>과 <U>해당 action의 값을 추정하는 과정</U>으로 분리하는 것입니다.  
+  target의 overestimate 문제를 해결하기 위해 논문에서는 **double estimator** 방식을 사용했는데, 이는 target을 계산하는 과정을 <U>next state의 action을 선택하는 과정</U>(selection)과 <U>해당 action의 값을 추정하는 과정</U>(evaluation)으로 분리하는 것입니다. 그래서 DoubleDQN의 target을 논문에서는 다음과 같이 사용합니다.
+
+
+$$
+\begin{aligned}
+Y^{DoubleQ}_{t} \equiv R_{t+1} + \gamma Q(s_{t+1}, argmax_a Q(s_{t+1}, a; \; \theta_t); \; \theta^-_t)\\
+\end{aligned}
+$$
+
+<br/>
+
+$argmax_aQ(s_{t+1}, a; \; \theta_t)$에서 greedy action의 selection은 learning network를 통해 이루어지고, 이에 대한 가치를 target network에서 estimate합니다.
 
 
 
@@ -74,6 +85,4 @@ $$
 
 
 
-
-
-<p align="center"><img src="https://github.com/LoteeYoon/LoteeYoon.github.io/blob/master/DoubleDQN_Figure_1.png?raw=true"></p>
+<!-- <p align="center"><img src="https://github.com/LoteeYoon/LoteeYoon.github.io/blob/master/DoubleDQN_Figure_1.png?raw=true"></p> -->
