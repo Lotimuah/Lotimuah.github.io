@@ -130,7 +130,7 @@ $$
 
 <br/>
 
-  위 식에서 우변의 두 번째 term을 보면 parameter $\alpha$에 의해 근사되는 $A(s, a)$는 완전히 $A(s, a)$의 정의를 따르진 않을 것이지만 $\max_{a' \in |\mathcal{A}|} A(s, a'; \theta, \alpha)$라는 identifier를 통해 괄호안의 수식이 original advantage $A(s, a)$의 property를 따를 수 있게끔 해줍니다. 결국 optimal action일 경우 위의 prior information을 통해 괄호 term은 $A(s, a^*) - \max_{a'}A(s, a') = 0$이 될 것이고 state-value $V(s)$ 값을 구분할 수 있게 됩니다.  
+  위 식에서 우변의 두 번째 term을 보면 parameter $\alpha$에 의해 근사되는 $A(s, a)$는 완전히 $A(s, a)$의 정의를 따르진 않을 것이지만 $\max_{a' \in \mid \mathcal{A} \mid} A(s, a'; \theta, \alpha)$라는 identifier를 통해 괄호안의 수식이 original advantage $A(s, a)$의 property를 따를 수 있게끔 해줍니다. 결국 optimal action일 경우 위의 prior information을 통해 괄호 term은 $A(s, a^*) - \max_{a'}A(s, a') = 0$이 될 것이고 state-value $V(s)$ 값을 구분할 수 있게 됩니다.  
 
   논문에서는 $\max$ 가 아닌 평균을 이용하는 방법도 제안했습니다.
 
