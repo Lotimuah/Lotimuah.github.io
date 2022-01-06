@@ -27,11 +27,11 @@ use_math: true
 ## Dueling Network
 
 <p align="center"><img src="https://github.com/LoteeYoon/LoteeYoon.github.io/blob/master/dueling_architect.png?raw=true"></p>  
+<br/>
 
   Fig 1.을 보면 기존의 Q-network와 dueling Q-network는 거의 차이가 없지만 마지막 부분이 조금 다르다는 것을 알 수 있습니다. input으로 raw screen을 받아들여 feature를 추출하고 Q-function을 근사하는 부분은 동일하지만 끝 부분에서 2개의 stream으로 분리되었다가 최종적으로 합쳐져 Q-function estimation을 합니다. 위쪽 stream은 state-value를 계산하는 **Value stream**이고, 아랫쪽 stream은 action의 value를 계산하는 **Advantage stream**입니다. 이렇게 간접적으로 $Q(s, a)$를 구하는 이유에 대해서 논문에서는 장애물을 회피하는 Atari enduro 게임의 simulation을 통해 설명합니다.
 
 
 <p align="center"><img src="https://github.com/LoteeYoon/LoteeYoon.github.io/blob/master/Dueling_enduro_game.png?raw=true"></p>  
-<br/>
 
   장애물이 있는 경우(Top)와 없는 경우(Bottom)에서 agent가 e
