@@ -83,3 +83,5 @@ $argmax_aQ(s_{t+1}, a; \; \theta_t)$에서 greedy action의 selection은 learnin
 정리하자면 DoubleDQN은 DQN보다 noise에 좀 더 견고하다고 할 수 있습니다. DQN에서 사용되는 target을 다음 state의 action을 selection하는 과정과 그 action을 estimate하는 과정을 분리해 이를 각각 다른 network에 맡겨 견고함을 높였습니다.  
 
 DoubleDQN의 전체적인 Architecture는 아래 그림과 같이 정리할 수 있습니다.
+
+<p align="center"><img src="https://github.com/LoteeYoon/LoteeYoon.github.io/blob/master/DoubleDQN_architecture.jpg?raw=true"></p>
