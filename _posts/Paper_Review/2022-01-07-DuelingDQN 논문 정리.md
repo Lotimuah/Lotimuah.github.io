@@ -27,11 +27,10 @@ use_math: true
 ## Dueling Network
 
 <p align="center"><img src="https://github.com/LoteeYoon/LoteeYoon.github.io/blob/master/dueling_architect.png?raw=true"></p>  
-<br/>
 
   Fig 1.을 보면 기존의 Q-network와 dueling Q-network는 거의 차이가 없지만 마지막 부분이 조금 다르다는 것을 알 수 있습니다. input으로 raw screen을 받아들여 feature를 추출하고 Q-function을 근사하는 부분은 동일하지만 끝 부분에서 2개의 stream으로 분리되었다가 최종적으로 합쳐져 Q-function estimation을 합니다. 위쪽 stream은 state-value를 계산하는 **Value stream**이고, 아랫쪽 stream은 action의 value를 계산하는 **Advantage stream**입니다. 이렇게 간접적으로 $Q(s, a)$를 구하는 이유에 대해서 논문에서는 장애물을 회피하는 Atari enduro 게임의 simulation을 통해 설명합니다.
 
 
 <p align="center"><img src="https://github.com/LoteeYoon/LoteeYoon.github.io/blob/master/Dueling_enduro_game.png?raw=true"></p>  
 
-  장애물이 있는 경우(Top)와 없는 경우(Bottom)에서 agent가 e
+  Fig 2.는 장애물이 없는 경우(Top)와 있는 경우(Bottom)에서 agent가 expected return을 높이기 위해 어디에 focus를 둬야할 지 value(left)와 advantage(right) 각각의 관점에서 보여줍니다. 자세히 살펴보면 value 관점에선 결국 expected return과 관련있는 목적지에 집중하게 되므로 지평선 근처의 차선 부근에 붉게 표시가 됩니다.advantage 관점에선 장애물이 없는 경우는 당장 action을 취하지 않아도 reward에 영향이 없기 때문에 별다른 focusing이 없습니다. 그러나 장애물이 있는 경우에는 붉게 표시가 나타나며 focusing을 하게 됩니다. 
