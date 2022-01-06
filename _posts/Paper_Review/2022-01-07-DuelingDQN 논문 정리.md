@@ -26,4 +26,4 @@ use_math: true
 
 ## Dueling Network
 
-  <p align="center"><img src=""></p>  
+  <p align="center"><img src="https://github.com/LoteeYoon/LoteeYoon.github.io/blob/master/dueling_architect.png?raw=true"></p>  
