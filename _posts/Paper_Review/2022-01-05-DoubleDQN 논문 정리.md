@@ -44,6 +44,8 @@ $$
 
   Q-learning에서는 next state $s'$의 expected value의 최댓값 $max_{a'}\mathbb{E}[ Q(s', a') ]$을 구하는 것이 목적입니다. next state에서의 action 중 어느 action의 기댓값이 가장 큰지 알고 싶은데 Q-learning에서는 이를 위해 단지 $\max_{a'}Q(s', a')$으로 estimate합니다. 그러나 이때 Non-negative bias가 존재하게 되고 $\max_{a'}Q(s', a')$는 평균적으로 어떠한 $a'$의 action-value의 기댓값 보다도 높은 값을 가지게 됩니다.
 
+<br/>
+
 $$
 \begin{aligned}
 \mathbb{E}[\max_{a'} Q(s', a')] \geq \max_{a'} \mathbb{E}[Q(s', a')]
@@ -64,6 +66,7 @@ $$
 
   target의 overestimate 문제를 해결하기 위해 논문에서는 **double estimator** 방식을 사용했는데, 이는 target을 계산하는 과정을 <U>next state의 action을 선택하는 과정</U>(selection)과 <U>해당 action의 값을 추정하는 과정</U>(evaluation)으로 분리하는 것입니다. 그래서 DoubleDQN의 target을 논문에서는 다음과 같이 사용합니다.
 
+<br/>
 
 $$
 \begin{aligned}
