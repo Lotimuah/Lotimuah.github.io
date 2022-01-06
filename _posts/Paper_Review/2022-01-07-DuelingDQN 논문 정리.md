@@ -36,21 +36,29 @@ use_math: true
   Fig 2.는 장애물이 없는 경우(Top)와 있는 경우(Bottom)에서 agent가 expected return을 높이기 위해 어디에 focus를 둬야할 지 value(left)와 advantage(right) 각각의 관점에서 보여줍니다. 자세히 살펴보면 value 관점에선 결국 expected return과 관련있는 목적지에 집중하게 되므로 지평선 근처의 차선 부근에 붉게 표시가 됩니다. advantage 관점에선 장애물이 없는 경우는 당장 action을 취하지 않아도 reward에 영향이 없기 때문에 별다른 focusing이 없습니다. 그러나 장애물이 있는 경우에는 붉게 표시가 나타나며 focusing을 하게 됩니다.
 
   이와 같이 각각의 stream에서 $Q(s, a)$를 value $V(s)$와 advantage $A(s, a)$로 나누어 계산할 수 있게 되면서 효과적으로 attention을 할 수 있습니다. 따라서 추정하고자 하는 $Q(s, a)$를 다음과 같은 식으로 표현할 수 있습니다.
+
 <br/>
+
 $$
 \begin{aligned}
 Q(s, a; \theta, \alpha, \beta) = V(s; \theta, \beta) + A(s, a; \theta, \alpha)\\
 \end{aligned}
 $$
+
 <br/>
+
   여기서 Advatage function $A(s, a)$는 이 논문에서 제안하는 새로운 함수가 아니라 기존에 사용하던 함수입니다. RL에서는 자주 어떤 action이 '절대적으로 좋은가' 보다는 '다른 것보다 얼마나 좋은가'에 초점을 맞춥니다. 이러한 것을 Advatage function을 통해 나타낼 수 있는데 다음과 같은 식으로 표현할 수 있습니다.
+
 <br/>
+
 $$
 \begin{aligned}
 A^{\pi}(s, a) = Q^{\pi}(s, a) - V^{\pi}(s)
 \end{aligned}
 $$
+
 <br/>
+
   그래서 이 Advantage function을 이용해 표현한 $Q(s, a)$를 학습에 적용할 수 있는데, 여기서 식을 그대로 사용하면 **identifibility** 문제가 발생합니다. 우리가 실제 학습에서 $Q(s, a)$가 주어졌을 때, $Q(s, a)$가 unique value가 아니기 때문에 $V(s; \theta, \beta)$ 와 $A(s, a; \theta, \alpha)$를 구분할 수 없게 된다는 것입니다.
 
   이 문제를 해결하기 위해 논문에서는  
