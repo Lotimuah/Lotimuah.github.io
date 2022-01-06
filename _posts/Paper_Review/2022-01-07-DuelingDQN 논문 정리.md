@@ -47,7 +47,7 @@ $$
 
 <br/>
 
-  여기서 Advatage function $A(s, a)$는 이 논문에서 제안하는 새로운 함수가 아니라 기존에 사용하던 함수입니다. RL에서는 자주 어떤 action이 '절대적으로 좋은가' 보다는 '다른 것보다 얼마나 좋은가'에 초점을 맞춥니다. 이러한 것을 Advatage function을 통해 나타낼 수 있는데 다음과 같은 식으로 표현할 수 있습니다.
+  여기서 Advatage function $A(s, a)$는 이 논문에서 제안하는 새로운 함수가 아니라 기존에 사용하던 함수입니다. RL에서는 종종 어떤 action이 '절대적으로 좋은가' 보다는 '다른 것보다 얼마나 좋은가'에 초점을 맞춥니다. 이러한 것을 Advatage function을 통해 나타낼 수 있는데 다음과 같은 식으로 표현할 수 있습니다.
 
 <br/>
 
@@ -59,6 +59,37 @@ $$
 
 <br/>
 
-  그래서 이 Advantage function을 이용해 표현한 $Q(s, a)$를 학습에 적용할 수 있는데, 여기서 식을 그대로 사용하면 **identifibility** 문제가 발생합니다. 우리가 실제 학습에서 $Q(s, a)$가 주어졌을 때, $Q(s, a)$가 unique value가 아니기 때문에 $V(s; \theta, \beta)$ 와 $A(s, a; \theta, \alpha)$를 구분할 수 없게 된다는 것입니다.
+  그래서 이 Advantage function을 이용해 표현한 $Q(s, a)$를 학습에 적용할 수 있습니다. 그러나 여기서 식을 그대로 사용하면 **identifibility** 문제가 발생합니다. 우리가 실제 학습에서 $Q(s, a)$가 주어졌을 때, $Q(s, a)$가 unique value가 아니기 때문에 $V(s; \theta, \beta)$ 와 $A(s, a; \theta, \alpha)$를 구분할 수 없게 된다는 것입니다.
 
-  이 문제를 해결하기 위해 논문에서는  
+  이 문제를 해결하기 위해 논문에서는 prior information을 사용합니다. 우리는 state-value가 action-value의 expectation 값이라는 것을 알고 있습니다.
+
+$$
+\begin{aligned}
+V^{\pi}(s) = \mathbb{E}_{a \sim \pi(s)}[Q^{\pi}(s, a)]
+\end{aligned}
+$$
+
+  이때, 위에서 정의한 advantage 식의 양 변에 expectation을 취한다면 다음이 성립합니다.
+
+$$
+\begin{aligned}
+\mathbb{E}_{a \sim \pi(s)}[Q^{\pi}(s, a)] &= \mathbb{E}_{a \sim \pi(s)}[V^{\pi}(s) + A^{\pi}(s, a)]\\
+V^{\pi}(s) &= V^{\pi}(s) + \mathbb{E}_{a \sim \pi(s)}[A^{\pi}(s, a)]\\
+\end{aligned}
+$$
+
+  두 번째 식에서 expectation이 action에 대한 것이므로 state-value $V^{\pi}(s)$는 expectation에서 빠져나오고 결과적으로 다음이 성립합니다.
+
+$$
+\begin{aligned}
+\therefore \mathbb{E}_{a \sim \pi(s)}[A^{\pi}(s, a)] &= 0
+\end{aligned}
+$$
+
+  논문에서는 이러한 prior information을 활용해 새로운 advantage 식을 제시했습니다.
+
+$$
+\begin{aligned}
+Q(s, a; \theta, \alpha, \beta) = V(s; \theta, \beta) + \biggl( A(s, a; \theta, \alpha) - max_{a' \in |\mathcal{A}|}A(s, a'; \theta, \alpha) \biggr)
+\end{aligned}
+$$
