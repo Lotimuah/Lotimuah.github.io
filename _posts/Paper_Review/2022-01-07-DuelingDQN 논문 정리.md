@@ -63,13 +63,19 @@ $$
 
   이 문제를 해결하기 위해 논문에서는 prior information을 사용합니다. 우리는 state-value가 action-value의 expectation 값이라는 것을 알고 있습니다.
 
+<br/>
+
 $$
 \begin{aligned}
 V^{\pi}(s) = \mathbb{E}_{a \sim \pi(s)}[Q^{\pi}(s, a)]
 \end{aligned}
 $$
 
+<br/>
+
   이때, 위에서 정의한 advantage 식의 양 변에 expectation을 취한다면 다음이 성립합니다.
+
+<br/>
 
 $$
 \begin{aligned}
@@ -78,7 +84,11 @@ V^{\pi}(s) &= V^{\pi}(s) + \mathbb{E}_{a \sim \pi(s)}[A^{\pi}(s, a)]\\
 \end{aligned}
 $$
 
+<br/>
+
   두 번째 식에서 expectation이 action에 대한 것이므로 state-value $V^{\pi}(s)$는 expectation에서 빠져나오고 결과적으로 다음이 성립합니다.
+
+<br/>
 
 $$
 \begin{aligned}
@@ -86,10 +96,16 @@ $$
 \end{aligned}
 $$
 
+<br/>
+
   논문에서는 이러한 prior information을 활용해 새로운 advantage 식을 제시했습니다.
+
+<br/>
 
 $$
 \begin{aligned}
 Q(s, a; \theta, \alpha, \beta) = V(s; \theta, \beta) + \biggl( A(s, a; \theta, \alpha) - max_{a' \in |\mathcal{A}|}A(s, a'; \theta, \alpha) \biggr)
 \end{aligned}
 $$
+
+<br/>
