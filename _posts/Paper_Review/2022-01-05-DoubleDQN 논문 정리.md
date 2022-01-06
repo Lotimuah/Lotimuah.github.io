@@ -73,16 +73,13 @@ $$
 
 <br/>
 
-$argmax_aQ(s_{t+1}, a; \; \theta_t)$에서 greedy action의 selection은 learning network를 통해 이루어지고, 이에 대한 가치를 target network에서 estimate합니다.
+$argmax_aQ(s_{t+1}, a; \; \theta_t)$에서 greedy action의 selection은 learning network를 통해 이루어지고, 이에 대한 가치를 target network에서 estimate합니다. 이렇게 하면 bias를 줄여 overestimate 문제를 해결할 수 있습니다. 아래 Fig 1. 보면 action의 수에 따라 DQN target과 DoubleDQN target의 bias 정도를 확인할 수 있습니다.
 
 
+<p align="center"><img src="https://github.com/LoteeYoon/LoteeYoon.github.io/blob/master/DoubleDQN_Figure_1.png?raw=true"></p>
 
+실험 결과를 통해서도 논문에서 제안한 target이 bias가 작은 것을 볼 수 있습니다.  
 
+정리하자면 DoubleDQN은 DQN보다 noise에 좀 더 견고하다고 할 수 있습니다. DQN에서 사용되는 target을 다음 state의 action을 selection하는 과정과 그 action을 estimate하는 과정을 분리해 이를 각각 다른 network에 맡겨 견고함을 높였습니다.  
 
-
-
-
-
-
-
-<!-- <p align="center"><img src="https://github.com/LoteeYoon/LoteeYoon.github.io/blob/master/DoubleDQN_Figure_1.png?raw=true"></p> -->
+DoubleDQN의 전체적인 Architecture는 아래 그림과 같이 정리할 수 있습니다.
