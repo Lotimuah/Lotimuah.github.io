@@ -20,18 +20,18 @@ use_math: true
   **분류** : Model-free/Policy Gradient
 
 
-### 1. REINFORCE
+## 1. REINFORCE
 
-### 2. Actor-Critic
+## 2. Actor-Critic
 
-### 3. Advantage Actor-Critic (A2C)
+## 3. Advantage Actor-Critic (A2C)
 
-### 4. Asyncronous Advantage Actor-Critic (A3C)
+## 4. Asyncronous Advantage Actor-Critic (A3C)
 
-### 5. Trust Region Policy Gradient (TRPO)
+## 5. Trust Region Policy Gradient (TRPO)
 
-### 6. Proximal Policy Optimization (PPO)
+## 6. Proximal Policy Optimization (PPO)
 
-### 7. Deep Deterministic Policy Gradient (DDPG)
+## 7. Deep Deterministic Policy Gradient (DDPG)
 
-### 8. Soft Actor-Critic (SAC)
+## 8. Soft Actor-Critic (SAC)

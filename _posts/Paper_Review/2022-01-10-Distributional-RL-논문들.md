@@ -19,8 +19,8 @@ use_math: true
 
   **분류** : Model-free/Distributional RL
 
-### 1. C51
+## 1. C51
 
-### 2. QR-DQN
+## 2. QR-DQN
 
-### 3. IQN
+## 3. IQN
