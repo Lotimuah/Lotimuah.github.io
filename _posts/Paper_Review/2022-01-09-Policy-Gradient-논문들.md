@@ -21,11 +21,10 @@ use_math: true
 
 <br/>
 
-  RL 알고리즘은 크게 Value-based 알고리즘과 Policy-based 알고리즘으로 나눌 수 있습니다. Value-based 알고리즘은 각 state마다 action에 대해 가치를 판단하여 간접적으로 implicit policy를 구하는 것입니다. 그러나 policy-based 알고리즘은 직접적으로 policy를 optimize하는 방식의 알고리즘입니다. policy-based 알고리즘은 value-based에 비해 수렴이 더 잘 되며, action space가 많거나(high-dimension) 연속적인(continuous) 경우에 적합합니다. 또한 stochastic한 policy를 학습하기 때문에 deterministic한 policy가 optimal이 될 수 없는 상황에 유리합니다. 이번 포스팅에서는 이러한 policy-based 알고리즘의 대표적인 논문들을 정리할 것입니다.
+  RL 알고리즘은 크게 Value-based 알고리즘과 Policy-based 알고리즘으로 나눌 수 있습니다. Value-based 알고리즘은 각 state마다 action에 대해 가치를 판단하여 간접적으로 implicit policy를 구하는 것입니다. 그러나 policy-based 알고리즘은 직접적으로 policy를 optimize합니다. policy-based는 value-based에 비해 수렴이 더 잘 되며, action space가 많거나(high-dimension) 연속적인(continuous) 경우에 적합합니다. 또한 stochastic한 policy를 학습하기 때문에 deterministic한 policy가 optimal이 될 수 없는 상황에 유리합니다. 이번 포스팅에서는 이러한 policy-based 알고리즘의 대표적인 논문들을 정리할 것입니다.
 
 
 ## 1. REINFORCE
-
 
 ## 2. Actor-Critic
 
