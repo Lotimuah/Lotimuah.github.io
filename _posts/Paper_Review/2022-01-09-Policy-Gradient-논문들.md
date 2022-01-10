@@ -25,7 +25,7 @@ use_math: true
 
 ## 1. REINFORCE
 
-  REINFORCE 알고리즘은 Monte-Carlo Policy Gradient(MC PG)라고도 불립니다. policy gradient는 objective function을 정의하고 이 objective를 maximize하도록 optimize하는 것이 목적입니다. 
+
 ## 2. Actor-Critic
 
 ## 3. Advantage Actor-Critic (A2C)
