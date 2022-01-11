@@ -38,7 +38,7 @@ key: page-about
 
     B.S. in Chemical Engineering
 
-  - **Inha University, Incheon, South Korea (Mar 2020 - )**
+  - **Inha University, Incheon, South Korea (Mar 2020 - Feb 2023)**
 
     M.S. in Computer Engineering
 
