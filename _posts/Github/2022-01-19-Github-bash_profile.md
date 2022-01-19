@@ -31,3 +31,5 @@ key: page-aside
 ## 3. source ~/.bash_profile
 
     $ source ~/.bash_profile
+
+<p align="center"><img src="https://github.com/LoteeYoon/LoteeYoon.github.io/blob/master/bash_profile3.JPG?raw=true"></p>
