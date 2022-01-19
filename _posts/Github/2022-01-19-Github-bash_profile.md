@@ -22,4 +22,4 @@ key: page-aside
 
     $ ssh [usr]@123.456.78.90 -p [port]
 
-<p align="center"><img src=""></p>
+<p align="center"><img src="https://github.com/LoteeYoon/LoteeYoon.github.io/blob/master/bash_profile2.JPG?raw=true"></p>
