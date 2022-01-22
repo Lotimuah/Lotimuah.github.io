@@ -67,3 +67,5 @@ key: page-aside
 ## 9. Test
 
     $ xclock
+
+<p align="center"><img src="https://github.com/LoteeYoon/LoteeYoon.github.io/blob/master/xclock.JPG?raw=true"></p>
