@@ -49,4 +49,16 @@ key: page-aside
     $ sudo apt-get install mplayer
     $ mplayer -vo caca <movie_file>
 
-<p align="center"><img src=""></p>
+<p align="center"><img src="https://github.com/LoteeYoon/LoteeYoon.github.io/blob/master/mplayer.JPG?raw=true"></p>
+
+  mplayer의 경우 ASCII 문자를 통해 display를 하는 것 같습니다.
+
+## 4. play video using xdg-open
+
+  마지막으로 xdg-open을 사용해봤습니다.
+
+    $ xdg-open <movie_file>
+
+<p align="center"><img src="https://github.com/LoteeYoon/LoteeYoon.github.io/blob/master/xdgopen.JPG?raw=true"></p>
+
+  이번엔 제대로 영상이 나오는 걸 확인할 수 있었습니다. 다만 영상의 재생 속도가 너무 느렸습니다. 무슨 이유인지는 정확히 모르겠으나 ssh를 통해 영상을 전달하는 것에 overhead가 있는 것 같습니다.
