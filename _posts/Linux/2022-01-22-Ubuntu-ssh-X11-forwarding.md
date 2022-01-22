@@ -1,7 +1,7 @@
 ---
 layout: article
 title:
-tags: Ubuntu ssh X11 forwarding
+tags: Ubuntu SSH X11 forwarding
 #comments: true
 #article_header:
 #  type: cover
