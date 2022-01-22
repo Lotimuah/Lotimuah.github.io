@@ -23,4 +23,17 @@ key: page-aside
     $ sudo apt-get install vlc browser-plugin-vlc
     $ sudo apt-get install libav-tools
     // mp4 파일 실행
-    $ vlc []
+    $ vlc <file_name>
+
+<p align="center"><img src="https://github.com/LoteeYoon/LoteeYoon.github.io/blob/master/vlc.JPG?raw=true"></p>
+
+  vlc를 통해 영상을 play하니 창이 뜨긴 하지만 영상이 나오진 않았습니다.
+
+## 2. play video using CVLC
+
+  구글링을 통해 cvlc를 사용해봤습니다.
+
+    $ echo $DISPLAY
+        nipa2019-0137:10.0
+
+    $ cvlc --x11-display :10.0 <file_name>
