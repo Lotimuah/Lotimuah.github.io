@@ -23,7 +23,7 @@ key: page-aside
     $ sudo apt-get install vlc browser-plugin-vlc
     $ sudo apt-get install libav-tools
     // mp4 파일 실행
-    $ vlc <file_name>
+    $ vlc <movie_file>
 
 <p align="center"><img src="https://github.com/LoteeYoon/LoteeYoon.github.io/blob/master/vlc.JPG?raw=true"></p>
 
@@ -36,4 +36,17 @@ key: page-aside
     $ echo $DISPLAY
         nipa2019-0137:10.0
 
-    $ cvlc --x11-display :10.0 <file_name>
+    $ cvlc --x11-display :10.0 <movie_file>
+
+<p align="center"><img src="https://github.com/LoteeYoon/LoteeYoon.github.io/blob/master/cvlc.JPG?raw=true"></p>
+
+  이 또한 아무것도 출력이 되지 않았습니다.
+
+## 3. play video using mplayer
+
+  이번엔 mplayer를 사용해봤습니다.
+
+    $ sudo apt-get install mplayer
+    $ mplayer -vo caca <movie_file>
+
+<p align="center"><img src=""></p>
