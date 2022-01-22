@@ -33,4 +33,6 @@ key: page-aside
 
 ### 3. ssh key
 
-  비밀번호 전달이 필요없도록 ssh key 방식을 사용할 수 있다. [SSH key](https://loteeyoon.github.io/2022/01/23/SSH-key.html)
+  비밀번호 전달이 필요없도록 ssh key 방식을 사용할 수 있다.
+
+  \*이전 포스팅 참고 [SSH key](https://loteeyoon.github.io/2022/01/23/SSH-key.html)
