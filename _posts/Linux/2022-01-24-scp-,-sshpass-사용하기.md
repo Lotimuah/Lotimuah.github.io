@@ -33,6 +33,6 @@ key: page-aside
 
 ### 3. ssh key
 
-  비밀번호 전달이 필요없도록 ssh key 방식을 사용할 수 있다.
+  ssh key 방식을 사용하면 scp를 사용하더라도 비밀번호를 전달하지 않아도 된다.
 
   \*이전 포스팅 참고 [SSH key](https://loteeyoon.github.io/2022/01/23/SSH-key.html)
