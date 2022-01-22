@@ -1,6 +1,6 @@
 ---
 layout: article
-title:
+title: Linux Setting
 tags: Linux
 #comments: true
 #article_header:
