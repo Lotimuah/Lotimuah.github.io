@@ -60,6 +60,7 @@ key: page-aside
     (3) 원격 접속 프로그램 setting (ex: Putty)
 
 <p align="center"><img src="https://github.com/LoteeYoon/LoteeYoon.github.io/blob/master/putty.png?raw=true"></p>
+
     (4) server로 ssh 접속
 
 ## 8. X11 display forwarding 체크
