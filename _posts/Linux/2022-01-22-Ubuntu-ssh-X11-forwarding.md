@@ -14,6 +14,8 @@ key: page-aside
 
   \* Ubuntu 18.04 GUI Server 설정 가이드
 
+---------------------------------------------------------
+
   OpenAI Gym 강화학습 실험을 하다보면 시뮬레이션 결과를 rendering할 필요가 있는데 이를 위해 Xwindow를 활용할 수 있습니다. 이를 이용하면 Ubuntu GPU server에 접속해 원격으로 GUI를 사용할 수 있습니다.
 
 
@@ -49,9 +51,9 @@ key: page-aside
 
     $ reboot
 
-## 7. Client에서 X11 forwarding 접솝을 위한 프로그램으로 Xming 설치 및 실행
+## 7. Client에서 X11 forwarding 접속을 위한 프로그램으로 Xming 설치 및 실행
 
-    (1) Xming 다운로드 [Xming download](https://sourceforge.net/projects/xming/)
+    (1) Xming 다운로드 (https://sourceforge.net/projects/xming/)
 
     (2) Xming 설치 및 실행
 

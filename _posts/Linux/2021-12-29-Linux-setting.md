@@ -14,6 +14,8 @@ key: page-aside
 
   \* Ubuntu 18.04 install 이후 기본적인 setting
 
+---------------------------------------------------------
+
 
 ### 1. Network connection
 
