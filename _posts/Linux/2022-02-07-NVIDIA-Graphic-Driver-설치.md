@@ -19,14 +19,68 @@ key: page-aside
   **CUDA Toolkit version** : 11.2
   **NVIDIA Driver version** : 460.27
 
+
+## 0. CUDA Toolkit Pre-installation Actions
+
+  CUDA Toolkit과 driver를 설치하기 위해서 사전에 몇 가지 사항들을 확인할 필요가 있습니다. [CUDA Toolkit Installation Guide for Linux](https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html)에서 2.Pre-installation Actions 과정을 진행합니다.
+
+    // 2.1 Verify you have a CUDA-Capable GPU
+    $ lspci | grep -i nvidia                  # 본인의 GPU가 CUDA-capable한지 확인
+
+    // 2.2 Verify you have a supported version of Linux
+    $ uname -m && cat /etc/*release           # 본인의 Linux version이 CUDA Toolkit을 지원하는지 확인
+
+    // 2.3 Verify the system has gcc installed
+    $ gcc --version
+    $ sudo apt-get install gcc                # gcc가 없다면 설치
+
+    // 2.4 Verify the system has the correct kernel headers and development packages installed
+    $ uname -r                                # system kernel check
+
+  5.8.0-44-generic 이라고 뜨면 5.8.0-44가 kernel version입니다.
+
+    // kernel에 맞게 header와 package 설치
+    $ sudo apt-get install linux-headers-$5.8.0-44
+
+
 ## 1. CUDA Toolkit install file 다운로드
 
   [CUDA Toolkit 11.2 version](https://developer.nvidia.com/cuda-11.2.0-download-archive)에서 자신의 setting에 맞게 파일을 다운로드 합니다.
 
-    $ 
+<p align="center"><img src="https://github.com/LoteeYoon/LoteeYoon.github.io/blob/master/CUDA_Toolkit.JPG?raw=true"></p>
+
+    $ wget https://developer.download.nvidia.com/compute/cuda/11.2.0/local_installers/cuda_11.2.0_460.27.04_linux.run
+
 ## 2. Nouveau Driver 제거
 
-  Ubuntu에서 기본적으로 설치되어 있는 **Nouveau driver**와 설치하려는 **NVIDIA driver**가 충돌하는 문제를 해결하기 위해 미리 제거해줍니다. 만약 NVIDIA driver가
+  Ubuntu에서 기본적으로 설치되어 있는 **Nouveau driver**와 설치하려는 **NVIDIA driver**가 충돌하는 문제를 해결하기 위해 미리 제거해줍니다. 만약 NVIDIA driver가 이미 설치되어 있는 상태라면 이를 전부 제거해주어야 합니다.
+
+    // NVIDIA driver 삭제
+    $ sudo apt-get purge nvidia*
+    $ sudo apt-get autoremove
+    $ sudo apt-get autoclean
+
+    // CUDA 삭제
+    $ sudo rm -rf /usr/local/cuda*
+    $ sudo apt-get --purge remove 'cuda*'
+    $ sudo apt-get autoremove --purge 'cuda*'
+
+    // NVIDIA driver, CUDA 삭제 확인
+    $ sudo dpkg -l | grep nvidia    # 아무 것도 출력되지 않으면 정상적으로 제거 완료
+    $ sudo dpkg -l | grep cuda      # 아무 것도 출력되지 않으면 정상적으로 제거 완료
+
+    //Nouveau driver 제거
+    $ sudo apt-get install dkms build-essential linux-headers-generic
+    $ sudo vi /etc/modprobe.d/blacklist.conf
+
+      // Append below contents in blacklist.conf file
+      blacklist nouveau
+      options nouveau modeset=0
+
+    $ echo options nouveau modeset=0 | sudo tee -a /etc/modprobe.d/nouveau-kms.conf
+    $ sudo reboot
+
+
 ## 3. NVIDIA Graphic Driver 설치
 
 ## 4. 환경변수 추가
