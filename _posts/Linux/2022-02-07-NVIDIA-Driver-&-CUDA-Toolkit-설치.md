@@ -116,3 +116,5 @@ key: page-aside
 ## 5. NVIDIA Driver, CUDA check
 
     $ nvidia-smi
+
+<p align="center"><img src=""></p>
