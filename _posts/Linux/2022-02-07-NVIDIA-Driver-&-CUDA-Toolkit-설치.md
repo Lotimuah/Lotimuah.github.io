@@ -81,7 +81,7 @@ key: page-aside
     $ sudo reboot
 
 
-## 3. NVIDIA Graphic Driver 설치
+## 3. NVIDIA Driver & CUDA Toolkit 설치
 
   **NVIDIA driver** 설치를 위해 먼저 graphic display와 input device들을 관리하는 X server를 끄고 GUI 관련 서비스들을 종료해줍니다.
 
