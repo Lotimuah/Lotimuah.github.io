@@ -119,4 +119,4 @@ key: page-aside
 
     $ nvidia-smi
 
-<p align="center"><img src=""></p>
+<p align="center"><img src="https://github.com/LoteeYoon/LoteeYoon.github.io/blob/master/NVIDIA_SMI.JPG?raw=true"></p>
