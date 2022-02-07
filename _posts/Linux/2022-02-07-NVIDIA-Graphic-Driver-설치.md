@@ -14,10 +14,10 @@ key: page-aside
 
 ## Remarks
 
-  **OS** : Ubuntu 18.04 LTS(x86_64)
-  **GPU** : NVIDIA RTX 3090
-  **CUDA Toolkit version** : 11.2
-  **NVIDIA Driver version** : 460.27
+  **OS** : Ubuntu 18.04 LTS(x86_64)  
+  **GPU** : NVIDIA RTX 3090  
+  **CUDA Toolkit version** : 11.2  
+  **NVIDIA Driver version** : 460.27  
 
 
 ## 0. CUDA Toolkit Pre-installation Actions
