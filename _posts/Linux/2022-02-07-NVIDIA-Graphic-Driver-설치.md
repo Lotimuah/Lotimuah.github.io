@@ -22,7 +22,7 @@ key: page-aside
 
 ## 0. CUDA Toolkit Pre-installation Actions
 
-  CUDA Toolkit과 driver를 설치하기 위해서 사전에 몇 가지 사항들을 확인할 필요가 있습니다. [CUDA Toolkit Installation Guide for Linux](https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html)에서 2.Pre-installation Actions 과정을 진행합니다.
+  CUDA Toolkit과 driver를 설치하기 위해서 사전에 몇 가지 사항들을 확인할 필요가 있습니다. [CUDA Toolkit Installation Guide for Linux](https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html)에서 **2.Pre-installation Actions** 과정을 진행합니다.
 
     // 2.1 Verify you have a CUDA-Capable GPU
     $ lspci | grep -i nvidia                  # 본인의 GPU가 CUDA-capable한지 확인
@@ -53,7 +53,7 @@ key: page-aside
 
 ## 2. Nouveau Driver 제거
 
-  Ubuntu에서 기본적으로 설치되어 있는 **Nouveau driver**와 설치하려는 **NVIDIA driver**가 충돌하는 문제를 해결하기 위해 미리 제거해줍니다. 만약 NVIDIA driver가 이미 설치되어 있는 상태라면 이를 전부 제거해주어야 합니다.
+  Ubuntu에서 기본적으로 설치되어 있는 **Nouveau driver**와 설치하려는 **NVIDIA driver**가 충돌하는 문제를 해결하기 위해 미리 제거해줍니다. 만약 **NVIDIA driver**가 이미 설치되어 있는 상태라면 이를 전부 제거해주어야 합니다.
 
     // NVIDIA driver 삭제
     $ sudo apt-get purge nvidia*
@@ -83,7 +83,23 @@ key: page-aside
 
 ## 3. NVIDIA Graphic Driver 설치
 
+  **NVIDIA driver** 설치를 위해 먼저 graphic display와 input device들을 관리하는 X server를 끄고 GUI 관련 서비스들을 종료해줍니다.
+
+    // Ctrl + Alt + F1을 눌러 console 창으로 변경 후 로그인 합니다.
+    $ sudo service lightdm stop
+    $ sudo sh cuda_11.2.0_460.27.04_linux.run
+
+
 ## 4. 환경변수 추가
+
+    설치가 완료되었으면 설치된 cuda library를 읽어올 수 있도록 환경변수를 추가합니다.
+
+      $ vi ~/.bashrc
+
+        // Append below contents in ~/.bashrc
+        export PATH=$PATH:/usr/local/cuda-11.2/bin
+        export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda-11.2/lib64
+
 
 ## 5. NVIDIA Driver, CUDA check
 
