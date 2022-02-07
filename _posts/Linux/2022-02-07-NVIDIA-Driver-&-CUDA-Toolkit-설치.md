@@ -112,6 +112,8 @@ key: page-aside
         export PATH=$PATH:/usr/local/cuda-11.2/bin
         export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda-11.2/lib64
 
+      $ source ~/.bashrc
+
 
 ## 5. NVIDIA Driver & CUDA check
 
