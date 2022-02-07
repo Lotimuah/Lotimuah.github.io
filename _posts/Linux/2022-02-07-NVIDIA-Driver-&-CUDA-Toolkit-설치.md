@@ -81,7 +81,7 @@ key: page-aside
     $ sudo reboot
 
 
-## 3. NVIDIA Driver & CUDA Toolkit 설치
+## 3. NVIDIA Driver & CUDA 설치
 
   **NVIDIA driver** 설치를 위해 먼저 graphic display와 input device들을 관리하는 X server를 끄고 GUI 관련 서비스들을 종료해줍니다.
 
@@ -113,7 +113,7 @@ key: page-aside
         export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda-11.2/lib64
 
 
-## 5. NVIDIA Driver, CUDA check
+## 5. NVIDIA Driver & CUDA check
 
     $ nvidia-smi
 
