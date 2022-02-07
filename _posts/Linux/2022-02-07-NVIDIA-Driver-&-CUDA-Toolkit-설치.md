@@ -1,6 +1,6 @@
 ---
 layout: article
-title: NVIDIA Graphic Driver 설치
+title: NVIDIA Driver & CUDA Tookit 설치
 tags: Linux
 #comments: true
 #article_header:
@@ -93,7 +93,7 @@ key: page-aside
 
 <p align="center"><img src="https://github.com/LoteeYoon/LoteeYoon.github.io/blob/master/CUDA_installer1.png?raw=true"></p>
 
-  
+
 ## 4. 환경변수 추가
 
     설치가 완료되었으면 설치된 cuda library를 읽어올 수 있도록 환경변수를 추가합니다.
