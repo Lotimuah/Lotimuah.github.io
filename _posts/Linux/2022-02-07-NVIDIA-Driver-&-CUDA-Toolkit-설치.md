@@ -99,7 +99,7 @@ key: page-aside
 
   설치가 완료되면 다음과 같이 나타납니다.
 
-<p align="center"><img src=""></p>
+<p align="center"><img src="https://github.com/LoteeYoon/LoteeYoon.github.io/blob/master/CUDA_Installer3.JPG?raw=true"></p>
 
 
 ## 4. 환경변수 추가
