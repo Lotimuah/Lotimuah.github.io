@@ -91,7 +91,7 @@ key: page-aside
 
   accept를 입력하고 설치를 진행해줍니다.
 
-<p align="center"><img src="https://github.com/LoteeYoon/LoteeYoon.github.io/blob/master/CUDA_installer1.png?raw=true"></p>
+<p align="center"><img src="https://github.com/LoteeYoon/LoteeYoon.github.io/blob/master/CUDA_Installer1.JPG?raw=true"></p>
 
   **NVIDIA driver**와 **CUDA Toolkit** 이외의 것들은 필요없어서 저는 해제해주었습니다.
 
