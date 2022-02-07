@@ -89,7 +89,11 @@ key: page-aside
     $ sudo service lightdm stop
     $ sudo sh cuda_11.2.0_460.27.04_linux.run
 
+  accept를 입력하고 설치를 진행해줍니다.
 
+<p align="center"><img src="https://github.com/LoteeYoon/LoteeYoon.github.io/blob/master/CUDA_installer1.png?raw=true"></p>
+
+  
 ## 4. 환경변수 추가
 
     설치가 완료되었으면 설치된 cuda library를 읽어올 수 있도록 환경변수를 추가합니다.
