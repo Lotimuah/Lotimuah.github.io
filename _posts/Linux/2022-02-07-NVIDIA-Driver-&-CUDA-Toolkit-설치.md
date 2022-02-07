@@ -40,7 +40,7 @@ key: page-aside
   5.8.0-44-generic 이라고 뜨면 5.8.0-44가 kernel version입니다.
 
     // kernel에 맞게 header와 package 설치
-    $ sudo apt-get install linux-headers-$5.8.0-44
+    $ sudo apt-get install linux-headers-5.8.0-44
 
 
 ## 1. CUDA Toolkit install file 다운로드
