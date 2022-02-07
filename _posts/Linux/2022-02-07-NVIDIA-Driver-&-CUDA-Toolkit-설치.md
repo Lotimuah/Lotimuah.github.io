@@ -69,6 +69,7 @@ key: page-aside
     $ sudo dpkg -l | grep nvidia    # 아무 것도 출력되지 않으면 정상적으로 제거 완료
     $ sudo dpkg -l | grep cuda      # 아무 것도 출력되지 않으면 정상적으로 제거 완료
 
+    #################################################################################
     //Nouveau driver 제거
     $ sudo apt-get install dkms build-essential linux-headers-generic
     $ sudo vi /etc/modprobe.d/blacklist.conf
@@ -79,6 +80,19 @@ key: page-aside
 
     $ echo options nouveau modeset=0 | sudo tee -a /etc/modprobe.d/nouveau-kms.conf
     $ sudo reboot
+    #################################################################################
+
+    #################################################################################
+    // 만약 위 과정이 안 된다면 다음을 실행
+    $ sudo vi /etc/modprobe.d/blacklist-nouveau.conf
+
+      // Append below contents in blacklist-nouveau.conf file
+      blacklist nouveau
+      options nouveau modeset=0
+
+    $ sudo update-initramfs -u
+    $ sudo reboot
+    #################################################################################
 
 
 ## 3. NVIDIA Driver & CUDA 설치
