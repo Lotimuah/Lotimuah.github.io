@@ -93,6 +93,14 @@ key: page-aside
 
 <p align="center"><img src="https://github.com/LoteeYoon/LoteeYoon.github.io/blob/master/CUDA_installer1.png?raw=true"></p>
 
+  **NVIDIA driver**와 **CUDA Toolkit** 이외의 것들은 필요없어서 저는 해제해주었습니다.
+
+<p align="center"><img src=""></p>
+
+  설치가 완료되면 다음과 같이 나타납니다.
+
+<p align="center"><img src=""></p>
+
 
 ## 4. 환경변수 추가
 
