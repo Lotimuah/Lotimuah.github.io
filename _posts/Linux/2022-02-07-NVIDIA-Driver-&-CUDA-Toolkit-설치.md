@@ -76,9 +76,13 @@ key: page-aside
 
       // Append below contents in blacklist.conf file
       blacklist nouveau
+      blacklist lbm-nouveau
       options nouveau modeset=0
+      alias nouveau off
+      alias lbm-nouveau off
 
     $ echo options nouveau modeset=0 | sudo tee -a /etc/modprobe.d/nouveau-kms.conf
+    $ sudo update-initramfs -u
     $ sudo reboot
     #################################################################################
 
