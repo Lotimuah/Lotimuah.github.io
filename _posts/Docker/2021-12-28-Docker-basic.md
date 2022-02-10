@@ -68,7 +68,7 @@ key: page-aside
 
 ### 8. Container start
 
-    $ docker run [container_name]
+    $ docker start [container_name]
 
 ### 9. Container restart
 
