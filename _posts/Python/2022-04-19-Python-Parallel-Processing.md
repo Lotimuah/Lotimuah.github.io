@@ -30,7 +30,7 @@ key: page-aside
 
   1에서 5까지 숫자를 1초에 하나씩 출력하는 task를 병렬화해보는 간단한 example을 해봅시다.
 
-
+```python
     from time import sleep
 
     %%time
@@ -56,12 +56,13 @@ key: page-aside
     [1, 2, 3, 4, 5]
     CPU times: user 4.32 ms, sys: 0 ns, total: 4.32 ms
     Wall time: 5.01 s
-
+```
 
 ### 3. task 병렬화
 
   이제 위 task를 5개의 task로 나눠 병렬화시켜 시간을 단축해보겠습니다.
 
+```python
     from dask import delayed, compute
     from time import sleep
 
@@ -87,7 +88,6 @@ key: page-aside
     (0, 1, 2, 3, 4)
     CPU times: user 3.58 ms, sys: 0 ns, total: 3.58 ms
     Wall time: 1 s
-
+```
 
   병렬화를 하기 때문에 출력은 sequential하게 되지는 않지만 task 자체는 병렬화되어 1초만에 해결한 것을 볼 수 있습니다.
-  
