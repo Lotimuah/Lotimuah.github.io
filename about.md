@@ -72,7 +72,7 @@ key: page-about
 
   - **Computer Engineering**
 
-    OOP / Data Structure / Algorithms / Database   
+    OOP / Data Structure / Algorithms / Database / Network   
     Unix Programming / Data Mining / Operating System   
 
 
