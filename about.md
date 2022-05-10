@@ -73,7 +73,7 @@ key: page-about
   - **Computer Engineering**
 
     OOP / Data Structure / Algorithms / Database / Network   
-    Unix Programming / Data Mining / Operating System   
+    Unix Programming / Operating System / Data Mining   
 
 
   - **Machine Learning**
