@@ -44,11 +44,14 @@ key: page-aside
     --name [container_name] \
     -h [host_name] \
     --gpus all \                                    // --gpus '"device=0,1"' : 특정 gpu 지정 가능
+    --ipc host
     --restart always \                              // container 항상 재시작
+    --privileged \                                  // host의 kernel 기능 사용 가능
     --ip [123.45.67.890] \
     -v [out_dir_path]:[container_dir_path] \        // -v : 외부 dir와 container의 dir 동기화
     -p [host_port1]:[container_port1] \             // -p : 외부 port와 container port 동기화 (port forwarding)
     -p [host_port2]:[container_port2] \
+    -itd \
     [image_name]
 
 ### 5. Container access (CLI)
