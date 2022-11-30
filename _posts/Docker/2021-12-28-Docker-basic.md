@@ -98,10 +98,9 @@ key: page-aside
 
 ### 15. Image commit
 
-    $ docker commit [container_name] [new_image_name]
+    $ docker commit [container_name] [docker_ID]/[new_image_name:TAG]
 
 ### 16. Image push
 
     $ docker login
-    $ docker tag [new_image_name] [docker_ID]/[new_image_name:TAG]
     $ docker push [docker_id]/[new_image_name:TAG]
