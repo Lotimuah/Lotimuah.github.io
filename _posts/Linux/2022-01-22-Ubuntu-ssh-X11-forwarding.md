@@ -59,7 +59,7 @@ key: page-aside
 
     (3) 원격 접속 프로그램 setting (ex: Putty)
 
-<p align="center"><img src="https://github.com/LoteeYoon/LoteeYoon.github.io/blob/master/putty.png?raw=true"></p>
+<p align="center"><img src="https://github.com/Lotymuah/Lotymuah.github.io/blob/master/putty.png?raw=true"></p>
 
     (4) server로 ssh 접속
 
@@ -71,4 +71,4 @@ key: page-aside
 
     $ xclock
 
-<p align="center"><img src="https://github.com/LoteeYoon/LoteeYoon.github.io/blob/master/xclock.JPG?raw=true"></p>
+<p align="center"><img src="https://github.com/Lotymuah/Lotymuah.github.io/blob/master/xclock.JPG?raw=true"></p>

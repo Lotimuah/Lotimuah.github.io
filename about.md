@@ -28,7 +28,7 @@ key: page-about
 
 <!-- # About me -->
 
-<img src="https://raw.githubusercontent.com/LoteeYoon/LoteeYoon.github.io/master/totoro.jpg" alt="Avatar" width="150" height="150">
+<img src="https://raw.githubusercontent.com/Lotymuah/Lotymuah.github.io/master/totoro.jpg" alt="Avatar" width="150" height="150">
 
     C:\Muah> hi there, my name is Jaeung Yoon_
 
@@ -87,4 +87,4 @@ key: page-about
 ## Contact  
 
 - email : whgdmswovbd@gmail.com
-- social : [GItHub](https://github.com/LoteeYoon), [Facebook](https://www.facebook.com/whgdmswodnd), [Twitter](https://www.twitter.com/LoteeYoon)
+- social : [GItHub](https://github.com/Lotymuah), [Facebook](https://www.facebook.com/whgdmswodnd), [Twitter](https://www.twitter.com/Lotymuah)

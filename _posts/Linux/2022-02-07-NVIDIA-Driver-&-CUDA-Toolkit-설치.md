@@ -47,7 +47,7 @@ key: page-aside
 
   [CUDA Toolkit 11.2 version](https://developer.nvidia.com/cuda-11.2.0-download-archive)에서 자신의 setting에 맞게 파일을 다운로드 합니다.
 
-<p align="center"><img src="https://github.com/LoteeYoon/LoteeYoon.github.io/blob/master/CUDA_Toolkit.JPG?raw=true"></p>
+<p align="center"><img src="https://github.com/Lotymuah/Lotymuah.github.io/blob/master/CUDA_Toolkit.JPG?raw=true"></p>
 
     $ wget https://developer.download.nvidia.com/compute/cuda/11.2.0/local_installers/cuda_11.2.0_460.27.04_linux.run
 
@@ -109,15 +109,15 @@ key: page-aside
 
   accept를 입력하고 설치를 진행해줍니다.
 
-<p align="center"><img src="https://github.com/LoteeYoon/LoteeYoon.github.io/blob/master/CUDA_Installer1.JPG?raw=true"></p>
+<p align="center"><img src="https://github.com/Lotymuah/Lotymuah.github.io/blob/master/CUDA_Installer1.JPG?raw=true"></p>
 
   **NVIDIA driver**와 **CUDA Toolkit** 이외의 것들은 필요없어서 저는 해제해주었습니다.
 
-<p align="center"><img src="https://github.com/LoteeYoon/LoteeYoon.github.io/blob/master/CUDA_Installer2.JPG?raw=true"></p>
+<p align="center"><img src="https://github.com/Lotymuah/Lotymuah.github.io/blob/master/CUDA_Installer2.JPG?raw=true"></p>
 
   설치가 완료되면 다음과 같이 나타납니다.
 
-<p align="center"><img src="https://github.com/LoteeYoon/LoteeYoon.github.io/blob/master/CUDA_Installer3.JPG?raw=true"></p>
+<p align="center"><img src="https://github.com/Lotymuah/Lotymuah.github.io/blob/master/CUDA_Installer3.JPG?raw=true"></p>
 
 
 ## 4. 환경변수 추가
@@ -137,4 +137,4 @@ key: page-aside
 
     $ nvidia-smi
 
-<p align="center"><img src="https://github.com/LoteeYoon/LoteeYoon.github.io/blob/master/NVIDIA_SMI.JPG?raw=true"></p>
+<p align="center"><img src="https://github.com/Lotymuah/Lotymuah.github.io/blob/master/NVIDIA_SMI.JPG?raw=true"></p>

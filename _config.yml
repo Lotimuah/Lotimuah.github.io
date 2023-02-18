@@ -41,7 +41,7 @@ author:
   bio       :
   email     : whgdmswovbd@gmail.com
   facebook  : whgdmswodnd
-  twitter   : LoteeYoon
+  twitter   : Lotymuah
   weibo     : # "user_id"   the last part of your profile url, e.g. https://www.weibo.com/user_id/profile?...
   googleplus: # "user_id"   the last part of your profile url, e.g. https://plus.google.com/u/0/user_id
   telegram  : # "user_name" the last part of your profile url, e.g. https://t.me/user_name
@@ -49,13 +49,13 @@ author:
   zhihu     : # "user_name" the last part of your profile url, e.g. https://www.zhihu.com/people/user_name
   douban    : # "user_name" the last part of your profile url, e.g. https://www.douban.com/people/user_name
   linkedin  : # "user_name" the last part of your profile url, e.g. https://www.linkedin.com/in/user_name
-  github    : LoteeYoon
+  github    : Lotymuah
   npm       : # "user_name" the last part of your profile url, e.g. https://www.npmjs.com/~user_name
 
 
 ## => GitHub Repository (if the site is hosted by GitHub)
 ##############################
-repository: LoteeYoon/LoteeYoon.github.io
+repository: Lotymuah/Lotymuah.github.io
 repository_tree: master
 
 
@@ -122,7 +122,7 @@ comments:
 
   ## Disqus
   disqus:
-    shortname: loteeyoon
+    shortname: Lotymuah
 
   ## Gitalk
   # please refer to https://github.com/gitalk/gitalk for more info.
