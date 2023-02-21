@@ -20,16 +20,16 @@ key: page-aside
 
     $ vi ~/.bash_profile
 
-<p align="center"><img src="https://github.com/Lotymuah/Lotymuah.github.io/blob/master/bash_profile.JPG?raw=true"></p>
+<p align="center"><img src="https://github.com/Lotimuah/Lotimuah.github.io/blob/master/bash_profile.JPG?raw=true"></p>
 
 ## 2. ssh 접속 command 입력 후 저장
 
     $ ssh [usr]@123.456.78.90 -p [port]
 
-<p align="center"><img src="https://github.com/Lotymuah/Lotymuah.github.io/blob/master/bash_profile2.JPG?raw=true"></p>
+<p align="center"><img src="https://github.com/Lotimuah/Lotimuah.github.io/blob/master/bash_profile2.JPG?raw=true"></p>
 
 ## 3. source ~/.bash_profile
 
     $ source ~/.bash_profile
 
-<p align="center"><img src="https://github.com/Lotymuah/Lotymuah.github.io/blob/master/bash_profile3.JPG?raw=true"></p>
+<p align="center"><img src="https://github.com/Lotimuah/Lotimuah.github.io/blob/master/bash_profile3.JPG?raw=true"></p>

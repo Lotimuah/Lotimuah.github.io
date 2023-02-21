@@ -35,4 +35,4 @@ key: page-aside
 
   ssh key 방식을 사용하면 scp를 사용하더라도 비밀번호를 전달하지 않아도 된다.
 
-  \*이전 포스팅 참고 [SSH key](https://Lotymuah.github.io/2022/01/23/SSH-key.html)
+  \*이전 포스팅 참고 [SSH key](https://Lotimuah.github.io/2022/01/23/SSH-key.html)
