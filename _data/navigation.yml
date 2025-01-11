@@ -88,3 +88,8 @@ docs-en:
         url: /archive.html?tag=LeetCode
       - title: Programmers
         url: /archive.html?tag=Programmers
+  - title: ETC
+    children:
+      - title: pytorch
+        url: /archive.html?tag=pytorch
+
