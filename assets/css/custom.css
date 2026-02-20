@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap');
+
+:root {
+  --font-main: 'Gowun Batang', serif;
+}
+
+
+/* ===== 전체 폰트 적용 (Font Awesome 아이콘 제외) ===== */
+body, html,
+main, header, footer,
+.navbar-brand,
+.nav-link,
+.page-heading h1,
+.intro-header .page-heading h1,
+.intro-header .post-heading h1,
+.intro-header .post-heading .post-meta,
+.post-preview,
+.post-preview .post-title,
+.post-preview p,
+.post-preview a,
+.post-preview .post-meta,
+.post-content,
+.blog-post,
+.blog-post p,
+.blog-post li,
+.blog-post a,
+.blog-post h2,
+.blog-post h3,
+.blog-tags,
+.blog-tags a,
+.post-meta,
+.beautiful-jekyll-footer,
+.beautiful-jekyll-footer a,
+.category-hierarchy,
+.category-parent-header,
+.category-parent-header strong,
+.category-child,
+.child-name,
+.category-count,
+.post-list li,
+.post-list a,
+.post-list .post-meta,
+#nav-search-link,
+.pagination,
+.pagination a {
+  font-family: var(--font-main) !important;
+}
+
+/* Font Awesome 아이콘 보호 */
+.fa, .fas, .far, .fab, .fa-brands,
+.fa-solid, .fa-regular,
+[class*="fa-"] {
+  font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands", "Font Awesome 6 Free", "Font Awesome 6 Brands" !important;
+}
+
+
+/* ===== 글씨 크기 ===== */
+body {
+  font-size: 1.2rem !important;
+}
+
+.navbar-brand {
+  font-size: 1.5em !important;
+}
+
+.nav-link {
+  font-size: 1.5em !important;
+}
+
+.beautiful-jekyll-footer,
+.beautiful-jekyll-footer a {
+  font-size: 1.2em !important;
+}
+
+.page-heading h1,
+.intro-header .page-heading h1 {
+  font-size: 2.5rem !important;
+}
+
+.intro-header .post-heading h1 {
+  font-size: 2.5rem !important;
+}
+
+@media (min-width: 768px) {
+  .page-heading h1,
+  .intro-header .page-heading h1 {
+    font-size: 3.5rem !important;
+  }
+  .intro-header .post-heading h1 {
+    font-size: 3.5rem !important;
+  }
+}
+
+.post-preview .post-title {
+  font-size: 2.0rem !important;
+}
+
+.post-preview p,
+.post-preview .post-meta {
+  font-size: 1.1rem !important;
+}
+
+.blog-post,
+.blog-post p,
+.blog-post li {
+  font-size: 1.25rem !important;
+}
+
+.blog-post h1 { font-size: 1.8rem !important; }
+.blog-post h2 { font-size: 1.6rem !important; }
+.blog-post h3 { font-size: 1.4rem !important; }
+
+.blog-tags,
+.post-meta,
+.intro-header .post-meta {
+  font-size: 1.15rem !important;
+}
+
+/* 카테고리 페이지: 포스트 날짜는 제목보다 작게 */
+.post-list .post-meta {
+  font-size: 0.7rem !important;
+}
+
+/* 카테고리 페이지: 텍스트 크기 1.2배 */
+.category-hierarchy {
+  font-size: 1.2rem;
+}
+.category-parent-header {
+  font-size: 1.2rem !important;
+}
+.category-parent-header .category-count {
+  font-size: 1.14rem !important;
+}
+.category-toggle {
+  font-size: 0.96rem !important;
+}
+.category-child {
+  font-size: 1.14rem !important;
+}
+.category-child .category-count {
+  font-size: 1.14rem !important;
+}
+.child-drag {
+  font-size: 1.08rem !important;
+}
+.post-list li {
+  font-size: 1.02rem !important;
+}
+.post-list .post-meta {
+  font-size: 0.84rem !important;
+}
+
+
+/* ===== 레이아웃 ===== */
+
+/* 헤더와 제목 사이 여백 */
+.intro-header .page-heading,
+.intro-header .post-heading {
+  padding-top: 2rem !important;
+}
+
+/* 페이지 제목(Blog Posts)과 포스트 목록 사이 여백 */
+header.header-section {
+  margin-bottom: 0.5rem !important;
+}
+
+/* 상단 영역 여백 확대 */
+main {
+  padding-top: 1.5rem !important;
+}
+
+/* 푸터 영역 높이 축소 */
+footer,
+.beautiful-jekyll-footer {
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
+}
+footer .footer-links {
+  margin-bottom: 0.5rem !important;
+}
+
+/* 푸터 아이콘 크기 축소 */
+footer .fa-stack {
+  font-size: 0.7em !important;
+}
+
+
+/* ===== Bold 폰트 굵기 줄이기 ===== */
+strong, b {
+  font-weight: 400 !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500 !important;
+}
+
+.navbar-brand,
+.post-title,
+.page-title {
+  font-weight: 500 !important;
+}
+
+.btn {
+  font-weight: 100 !important;
+}

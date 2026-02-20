@@ -1,0 +1,25 @@
+# 계층형 카테고리 - [영문] 한글명 > 하위 태그
+- id: Fundamentals
+  name: 원리 및 기초
+  children:
+    - AI
+    - Computer Science
+    - Optimization
+    - Tools
+    - Library
+
+- id: Systems
+  name: 설계 및 운영
+  children:
+    - Architecture
+    - MLOps & Infra
+
+- id: Values
+  name: 기술 판단과 결정
+  children: []
+
+- id: Archive
+  name: 회고 및 정리
+  children:
+    - Retrospective
+    - Paper & Book
