@@ -118,36 +118,37 @@ body {
 
 /* 카테고리 페이지: 포스트 날짜는 제목보다 작게 */
 .post-list .post-meta {
-  font-size: 0.7rem !important;
+  font-size: 0.84rem !important; /* 0.7 * 1.2 */
 }
 
-/* 카테고리 페이지: 텍스트 크기 1.2배 */
+/* 카테고리 페이지: 인덱스 텍스트 크기 1.2배 */
 .category-hierarchy {
-  font-size: 1.2rem;
+  font-size: 1.44rem; /* 1.2 * 1.2 */
 }
 .category-parent-header {
-  font-size: 1.2rem !important;
+  font-size: 1.44rem !important; /* 1.2 * 1.2 */
 }
 .category-parent-header .category-count {
-  font-size: 1.14rem !important;
+  font-size: 1.37rem !important; /* 1.14 * 1.2 */
 }
 .category-toggle {
-  font-size: 0.96rem !important;
+  font-size: 1.15rem !important; /* 0.96 * 1.2 */
 }
 .category-child {
-  font-size: 1.14rem !important;
+  font-size: 1.37rem !important; /* 1.14 * 1.2 */
 }
 .category-child .category-count {
-  font-size: 1.14rem !important;
+  font-size: 1.37rem !important; /* 1.14 * 1.2 */
 }
+.child-name,
 .child-drag {
-  font-size: 1.08rem !important;
+  font-size: inherit;
 }
 .post-list li {
-  font-size: 1.02rem !important;
+  font-size: 1.22rem !important; /* 1.02 * 1.2 */
 }
 .post-list .post-meta {
-  font-size: 0.84rem !important;
+  font-size: 1.01rem !important; /* 0.84 * 1.2 */
 }
 
 
@@ -202,4 +203,38 @@ h1, h2, h3, h4, h5, h6 {
 
 .btn {
   font-weight: 100 !important;
+}
+
+
+/* ===== 아바타: Lotimuah's Blog 왼쪽에 배치 ===== */
+/* 아바타+브랜드를 하나로 묶어 화면 폭에 상관없이 항상 왼쪽 고정 */
+.navbar-custom .navbar-brand-wrapper {
+  display: flex !important;
+  align-items: center !important;
+  margin-right: auto !important;
+  flex-shrink: 0 !important;
+}
+.navbar-custom .avatar-container-left {
+  position: static !important;
+  left: auto !important;
+  bottom: auto !important;
+  width: 2.5rem !important;
+  margin-right: 0.5rem !important;
+  display: flex !important;
+  align-items: center !important;
+}
+.navbar-custom .avatar-container-left .avatar-img-border {
+  margin-left: 0 !important;
+  width: 100% !important;
+}
+@media (min-width: 1200px) {
+  .navbar-custom .avatar-container-left {
+    width: 3rem !important;
+    margin-right: 0.75rem !important;
+  }
+}
+/* 스크롤 시에도 왼쪽 아바타 유지 */
+.navbar-custom.top-nav-short .avatar-container-left {
+  opacity: 1 !important;
+  visibility: visible !important;
 }
