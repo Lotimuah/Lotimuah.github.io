@@ -46,6 +46,8 @@ share-links-active:
   vk: false
   reddit: false
 
+url: "https://lotimuah.github.io"
+baseurl: ""
 url-pretty: "lotimuah.github.io"
 repository: Lotimuah/Lotimuah.github.io
 title-on-all-pages: true
