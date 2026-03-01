@@ -16,7 +16,8 @@
 
 - id: Values
   name: 기술 판단과 결정
-  children: []
+  children:
+    - Trade-off
 
 - id: Archive
   name: 회고 및 정리
